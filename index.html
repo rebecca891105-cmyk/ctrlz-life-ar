@@ -10,6 +10,29 @@
 <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 
 <style>
+  
+/* 修正 AR 相機畫面 */
+body {
+  background: transparent !important;
+}
+
+a-scene,
+a-scene canvas,
+video {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+video {
+  display: block !important;
+  z-index: 0 !important;
+}
+
+#shade {
+  pointer-events: none;
+  background: transparent !important;
+}
+
 * { box-sizing: border-box; }
 
 html, body {
