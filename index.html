@@ -171,21 +171,45 @@ button.secondary {
   id="target"
   mindar-image-target="targetIndex: 0">
 
-  <a-text
-    value="CTRL+Z"
-    position="0 0 0.1"
-    align="center"
-    color="#00FFFF"
-    width="2">
-  </a-text>
 
-  <a-torus
-    position="0 0 0.05"
-    radius="0.35"
-    radius-tubular="0.012"
-    color="#00FFFF"
-    animation="property: rotation; to: 0 0 360; loop: true; dur: 6000; easing: linear">
-  </a-torus>
+<!-- 夢境傳送門：粉紫色外圈 -->
+<a-torus
+  position="0 0 0.08"
+  radius="0.38"
+  radius-tubular="0.025"
+  color="#E8A8FF"
+  material="shader: flat; opacity: 0.95"
+  animation="property: rotation; to: 0 0 360; loop: true; dur: 8000; easing: linear">
+</a-torus>
+
+<!-- 夢境傳送門：藍色內圈 -->
+<a-torus
+  position="0 0 0.10"
+  radius="0.29"
+  radius-tubular="0.012"
+  color="#A5E9FF"
+  material="shader: flat; opacity: 0.85"
+  animation="property: rotation; to: 0 0 -360; loop: true; dur: 5000; easing: linear">
+</a-torus>
+
+<!-- 中央夢境光球 -->
+<a-sphere
+  position="0 0 0.06"
+  radius="0.20"
+  color="#D7B7FF"
+  material="shader: flat; transparent: true; opacity: 0.55"
+  animation="property: scale; from: 0.9 0.9 0.9; to: 1.15 1.15 1.15; dir: alternate; loop: true; dur: 1800">
+</a-sphere>
+
+<!-- 漂浮文字 -->
+<a-text
+  value="PARALLEL LIFE"
+  position="0 -0.43 0.15"
+  align="center"
+  color="#FFFFFF"
+  width="1.5">
+</a-text>
+
 
 </a-entity>
 
